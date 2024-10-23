@@ -20,8 +20,9 @@
   <body
     class="w-screen h-screen flex justify-center items-center bg-light-gray-blue"
   >
-    <div
+    <main
       class="w-730 mx-6 flex flex-col sd:flex-row bg-white rounded-sm shadow-default"
+      role="main"
     >
       <img
         src="./assets/drawers.jpg"
@@ -30,11 +31,15 @@
         class="max-w-full sd:max-w-72 max-h-200 sd:max-h-full sd:rounded-bl-sm rounded-tl-sm sd:rounded-tr-none rounded-tr-sm object-cover"
       />
 
-      <div class="relative pb-5 pt-8 sd:py-8 px-10 font-manrope">
-        <h3 class="text-dark-gray md:text-heading text-heading-mobile mb-3">
+      <article class="relative pb-5 pt-8 sd:py-8 px-10 font-manrope">
+        <h1 class="sr-only">
+          Article Preview: Shift the Look of Your Furniture
+        </h1>
+
+        <h2 class="text-dark-gray md:text-heading text-heading-mobile mb-3">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
-        </h3>
+        </h2>
 
         <p class="text-dark-blue text-paragraph mb-5">
           Ever been in a room and felt like something was missing? Perhaps it
@@ -107,7 +112,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </main>
   </body>
 </html>
