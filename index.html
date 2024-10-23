@@ -30,7 +30,7 @@
         class="max-w-full sd:max-w-72 max-h-200 sd:max-h-full sd:rounded-bl-sm rounded-tl-sm sd:rounded-tr-none rounded-tr-sm object-cover"
       />
 
-      <div class="py-8 px-10 font-manrope">
+      <div class="relative pb-5 pt-8 sd:py-8 px-10 font-manrope">
         <h3 class="text-dark-gray md:text-heading text-heading-mobile mb-3">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
@@ -56,7 +56,7 @@
             </div>
           </div>
 
-          <div class="relative">
+          <div class="sd:relative">
             <div
               id="share-button"
               class="h-8 w-8 flex justify-center items-center bg-light-gray-blue rounded-full hover:cursor-pointer"
@@ -70,7 +70,7 @@
 
             <div
               id="tooltip"
-              class="hidden flex gap-5 justify-between items-center absolute w-max translate-x-tooltip py-4 px-9 bg-dark-gray bottom-14 shadow-share rounded-lg after:absolute after:left-1/2 after:bottom-m17 after:-translate-x-1/2 after:w-0 after:h-0 after:border-r-15 after:border-r-transparent after:border-l-15 after:border-l-transparent after:border-t-17 after:border-t-dark-gray"
+              class="hidden flex gap-5 justify-between items-center absolute w-full sd:w-max lg:translate-x-tooltip-l sd:translate-x-tooltip-m py-5 sd:py-4 px-9 bg-dark-gray sd:bottom-14 bottom-0 left-0 shadow-share rounded-lg after:hidden sd:after:block after:absolute after:left-1/2 after:bottom-m17 lg:after:-translate-x-1/2 after:translate-x-130 after:w-0 after:h-0 after:border-r-15 after:border-r-transparent after:border-l-15 after:border-l-transparent after:border-t-17 after:border-t-dark-gray"
             >
               <div class="uppercase text-share text-gray-blue">Share</div>
               <div class="flex gap-4">
@@ -91,6 +91,17 @@
                   alt="Pinterest"
                   loading="lazy"
                   class=""
+                />
+              </div>
+
+              <div
+                id="share-button-mobile"
+                class="sd:hidden h-8 w-8 flex justify-center items-center bg-dark-blue rounded-full hover:cursor-pointer"
+              >
+                <img
+                  src="./assets/icon-share-light.svg"
+                  alt="Share Icon"
+                  loading="lazy"
                 />
               </div>
             </div>
