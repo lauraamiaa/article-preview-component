@@ -12,6 +12,8 @@
     />
 
     <link href="./dist/output.css" rel="stylesheet" />
+    <script defer src="./src/index.js"></script>
+
     <title>Article preview component</title>
   </head>
 
@@ -50,13 +52,14 @@
             />
             <div>
               <div class="text-dark-gray text-author">Michelle Appleton</div>
-              <div class="text-gray-blue text-paragraph">28 Jun 2020 Share</div>
+              <div class="text-gray-blue text-paragraph">28 Jun 2020</div>
             </div>
           </div>
 
           <div class="relative">
             <div
-              class="h-8 w-8 flex justify-center items-center bg-light-gray-blue rounded-full"
+              id="share-button"
+              class="h-8 w-8 flex justify-center items-center bg-light-gray-blue rounded-full hover:cursor-pointer"
             >
               <img
                 src="./assets/icon-share.svg"
@@ -67,7 +70,7 @@
 
             <div
               id="tooltip"
-              class="flex gap-5 justify-between items-center absolute w-max translate-x-tooltip py-4 px-9 bg-dark-gray bottom-14 shadow-share rounded-lg after:absolute after:left-1/2 after:bottom-m17 after:-translate-x-1/2 after:w-0 after:h-0 after:border-r-15 after:border-r-transparent after:border-l-15 after:border-l-transparent after:border-t-17 after:border-t-dark-gray"
+              class="hidden flex gap-5 justify-between items-center absolute w-max translate-x-tooltip py-4 px-9 bg-dark-gray bottom-14 shadow-share rounded-lg after:absolute after:left-1/2 after:bottom-m17 after:-translate-x-1/2 after:w-0 after:h-0 after:border-r-15 after:border-r-transparent after:border-l-15 after:border-l-transparent after:border-t-17 after:border-t-dark-gray"
             >
               <div class="uppercase text-share text-gray-blue">Share</div>
               <div class="flex gap-4">
