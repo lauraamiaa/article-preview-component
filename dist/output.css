@@ -697,6 +697,16 @@ video {
   border-radius: 10px;
 }
 
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-t-none {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
 .rounded-tl-sm {
   border-top-left-radius: 10px;
 }
@@ -941,6 +951,10 @@ video {
 
   .sd\:flex-row {
     flex-direction: row;
+  }
+
+  .sd\:rounded-lg {
+    border-radius: 0.5rem;
   }
 
   .sd\:rounded-bl-sm {
